@@ -9,29 +9,31 @@ import random
 from tqdm import tqdm
 
 
-API_KEY = ""
+import os
+API_KEY = os.getenv("OPENAI_API_KEY")
+
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--input_file1",
         type=str,
-        default="dataset/generated_text.json"
+        default="../dataset/generated_text.json"
     )
     parser.add_argument(
         "--input_file2",
         type=str,
-        default=f"dataset/generated_open_instruction.json"
+        default=f"../dataset/generated_open_instruction.json"
     )
     parser.add_argument(
         "--output_file",
         type=str,
-        default=f"dataset/paraphrased_instruction.json",
+        default=f"../dataset/paraphrased_instruction.json",
     )
     parser.add_argument(
         "--api_key",
         type=str,
-        help="The API key to use."
+        help="The API key to use. If not specified, the key will be read from the environment variable OPENAI_API_KEY."
     )
     return parser.parse_args()
 
@@ -134,12 +136,10 @@ def process_file(input_file, output_file, category):
             saved_data.append(dic)
             save_data(output_file, saved_data)
 
-            
 
 
 if __name__ == '__main__':
     args = parse_args()
-    API_KEY = args.api_key
     print(args.input_file1)
     process_file(args.input_file1, args.output_file, 'fixed_header')
     print(args.input_file2)

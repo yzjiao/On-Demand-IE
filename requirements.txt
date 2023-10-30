@@ -1,0 +1,13 @@
+torch >= 1.12.1
+re
+sys
+nltk
+args
+json
+time
+random
+requests
+argparse
+tqdm
+tabulate
+collections
