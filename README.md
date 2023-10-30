@@ -55,7 +55,7 @@ python filter_table.py
 
 
 ## :wrench: Model Training 
-We finetune *LLaMA-7B* with *LoRA*, a parameter-efficient fine-tuning technique, on the training set of our *InstructIE* data to obtain the model *Odie*. 
+We finetune *LLaMA-7B* with *LoRA*, a parameter-efficient fine-tuning technique, on the training set of our *InstructIE* data to obtain the model *ODIE*. 
 We format the datasets to follow a chatbot-style schema to allow interactions between the user and the language model into one input sequence.
 During training, we compute the cross entropy loss.
 Please find more details about the training stage in [this directory](https://github.com/yzjiao/On-Demand-IE/tree/main/training).
