@@ -11,7 +11,7 @@ This instruction data can be used to conduct instruction-tuning for language mod
 ## :rocket: Data Generation from scratch
 
 To generate the training data using your own seed tasks or other models, we open-source our scripts for the entire pipeline here. Our current code is tested on the GPT-3.5-turbo model accessible via the OpenAI API. 
-**To run this pipeline**, please find the implementation details in [the Data Generation directory](https://github.com/yzjiao/On-Demand-IE/tree/main/data_generation).
+**To run this pipeline**, please find the implementation details and the usage instructions in [the Data Generation directory](https://github.com/yzjiao/On-Demand-IE/tree/main/data_generation).
 
 
 
