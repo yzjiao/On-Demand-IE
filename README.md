@@ -61,6 +61,18 @@ During training, we compute the cross entropy loss.
 Please find [more details about the training stage in this directory](https://github.com/yzjiao/On-Demand-IE/tree/main/training).
 
 
+## :bar_chart: Model Evaluation
+To evaluate the table header with semantics similarity, run the following script 
+```bash
+python evaluation/sim_for_header.py PATH_OF_FILE
+```
+To evaluate the table content with RougeL, run the following script 
+```bash
+python evaluation/rougel_for_content.py PATH_OF_FILE
+```
+
+Please provide the path of the evaluated file to run these two scripts. Otherwise, they would evaluate [the output of ODIE](model_output/ODIE-7b-filter.json) by default. You can also try to evaluate the outputs of other models under [this directory](https://github.com/yzjiao/On-Demand-IE/tree/main/model_output). 
+
 
 ## :books: Citation
 
