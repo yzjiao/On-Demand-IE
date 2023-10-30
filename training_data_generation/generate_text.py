@@ -5,14 +5,15 @@ from tqdm import tqdm
 import requests
 import argparse
 
-API_KEY = ""
+import os
+API_KEY = os.getenv("OPENAI_API_KEY")
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--input_seed_file",
         type=str,
-        default="dataset/seed.json"
+        default="../dataset/seed.json"
     )
     parser.add_argument(
         "--num_seeds",
@@ -23,12 +24,12 @@ def parse_args():
     parser.add_argument(
         "--input_file",
         type=str,
-        default="dataset/generated_instruction.json"
+        default="../dataset/generated_instruction.json"
     )
     parser.add_argument(
         "--output_file",
         type=str,
-        default=f"dataset/generated_text.json",
+        default=f"../dataset/generated_text.json",
     )
     parser.add_argument(
         "--num_text_per_instr",
@@ -40,7 +41,7 @@ def parse_args():
         "--api_key",
         type=str,
         default="",
-        help="The API key to use. "
+        help="The API key to use. If not specified, the key will be read from the environment variable OPENAI_API_KEY."
     )
     return parser.parse_args()
 
@@ -112,7 +113,6 @@ def save_data(output_file, data):
 
 if __name__ == '__main__':
     args = parse_args()
-    API_KEY = args.api_key
     seed = load_data(args.input_seed_file)[:args.num_seeds]
     data = load_data(args.input_file)
     data_done = load_data(args.output_file)

@@ -19,17 +19,17 @@ def parse_args():
     parser.add_argument(
         "--input_file",
         type=str,
-        default=f"dataset/generated_table.json"
+        default=f"../dataset/generated_table.json"
     )
     parser.add_argument(
         "--output_file",
         type=str,
-        default=f"dataset/filtered_table.json",
+        default=f"../dataset/filtered_table.json",
     )
     parser.add_argument(
         "--model_input_file",
         type=str,
-        default=f"dataset/model_input_after_filter.jsonl",
+        default=f"../dataset/model_input_after_filter.jsonl",
     )
     parser.add_argument(
         "--min_num_row",
