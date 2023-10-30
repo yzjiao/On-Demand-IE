@@ -19,7 +19,7 @@ To generate the training data using your own seed tasks or other models, we open
 export OPENAI_API_KEY='YOUR KEY HERE';
 ```
 
-Additionally, you need to use an automatic evalautor, [UniEval]{https://github.com/maszhongming/UniEval}, for the step of data filtering in our pipeline. Please install the environment  for this tool. You can find more details in the [original repo]{https://github.com/maszhongming/UniEval}. 
+Additionally, you need to use an automatic evalautor, [UniEval](https://github.com/maszhongming/UniEval), for the step of data filtering in our pipeline. Please install the environment  for this tool. You can find more details in the [original repo](https://github.com/maszhongming/UniEval). 
 ```bash
 git clone https://github.com/maszhongming/UniEval.git
 cd UniEval
