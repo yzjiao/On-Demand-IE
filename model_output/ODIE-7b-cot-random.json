@@ -1096,7 +1096,7 @@
         "output": "The task is to extract information about the recipes that can be made for a picky toddler who only eats food with orange color. We will provide a table that includes the name of the recipe, the ingredients, and the cooking time. The recipes included in the text are pumpkin bread, turkey and carrot roll-up, and strawberry applause.\n\n| Recipe | Ingredients | Cooking Time |\n|---|---|---|\n| Pumpkin Bread | Pumpkin, honey, oil, eggs, coconut oil, milk, pumpkin spice, baking soda, vanilla, salt | 1 hour |\n| Turkey and Carrot Roll-up | Tortilla, hummus, carrots, turkey lunch meat | 10 minutes |\n| Strawberry Applause | Cherries, water, cinnamon, vanilla, strawberries | 15 minutes |",
         "source_type": "retrieve",
         "domain": "culinary",
-        "category": "fixed headers",
+        "category": "fixed header",
         "difficulty": "hard"
     },
     {

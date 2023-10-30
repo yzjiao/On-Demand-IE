@@ -1096,7 +1096,7 @@
         "output": "| Recipe | Ingredients | Cooking Time |\n| --- | --- | --- |\n| Pumpkin Bread | Oil, honey, eggs, pumpkin purée, milk, pumpkin spice, baking soda, vanilla, salt | 55-60 minutes |\n| Turkey + Carrot Roll-Up | Tortilla, hummus, carrots, turkey lunch meat | 10 minutes |\n| Strawberry Applause | Cherries, water, cinnamon, vanilla | 15 minutes |",
         "source_type": "retrieve",
         "domain": "culinary",
-        "category": "fixed headers",
+        "category": "fixed header",
         "difficulty": "hard"
     },
     {

@@ -1096,7 +1096,7 @@
         "output": "The task is to extract recipes for orange-colored food that a picky toddler can eat. We will need to extract the recipe name, ingredients, and cooking time for each recipe. We will structure this information in a tabular format that clearly shows the name of the recipe, the ingredients required, and the cooking time. \n\n| Recipe Name | Ingredients | Cooking Time |\n| --- | --- | --- |\n| Pumpkin Bread | Oil, honey, eggs, pumpkin purée, milk, pumpkin spice, baking soda, vanilla, salt | 55-60 minutes |\n| Turkey + Carrot Roll-up | Tortilla, hummus, carrots, turkey lunch meat | 20 minutes |\n| Strawberry Applause | Cherries, water, cinnamon, vanilla | 15 minutes |",
         "source_type": "retrieve",
         "domain": "culinary",
-        "category": "fixed headers",
+        "category": "fixed header",
         "difficulty": "hard"
     },
     {

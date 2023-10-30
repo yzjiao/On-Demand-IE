@@ -1096,7 +1096,7 @@
         "output": "| Recipe | Ingredients | Cooking Time |\n| ---------- | ---------- | ---------- |\n| Pumpkin Bread | 1 cup pumpkin purée | 55-60 minutes |\n| Turkey + Carrot Roll-Up | Tortilla | 20 minutes |\n| Strawberry Applause | Cherries, water, cinnamon, vanilla | 15 minutes |",
         "source_type": "retrieve",
         "domain": "culinary",
-        "category": "fixed headers",
+        "category": "fixed header",
         "difficulty": "hard"
     },
     {
