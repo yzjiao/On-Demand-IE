@@ -1,5 +1,5 @@
 export CUDA_VISIBLE_DEVICES=0,1
-export TRANSFORMERS_CACHE=/shared/data3/mingz5/.cache
+# export TRANSFORMERS_CACHE=/path/to/cache
 
 WORLD_SIZE=2  torchrun --nproc_per_node=2 --master_port=12345 finetune.py \
     --base_model "elinas/llama-7b-hf-transformers-4.29" \
