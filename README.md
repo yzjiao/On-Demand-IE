@@ -11,7 +11,7 @@ This instruction data can be used to conduct instruction-tuning for language mod
 ## :rocket: Data Generation from scratch
 
 To generate the training data using your own seed tasks or other models, we open-source our scripts for the entire pipeline here. Our current code is tested on the GPT-3.5-turbo model accessible via the OpenAI API. 
-**To run this pipeline**, Please find [the implementation details in the Data Generation directory](https://github.com/yzjiao/On-Demand-IE/tree/main/data_generation).
+**To run this pipeline**, please find the implementation details in [the Data Generation directory](https://github.com/yzjiao/On-Demand-IE/tree/main/data_generation).
 
 
 
@@ -19,7 +19,7 @@ To generate the training data using your own seed tasks or other models, we open
 We finetune *LLaMA-7B* with *LoRA*, a parameter-efficient fine-tuning technique, on the training set of our *InstructIE* data to obtain the model *ODIE*. 
 We format the datasets to follow a chatbot-style schema to allow interactions between the user and the language model into one input sequence.
 During training, we compute the cross entropy loss.
-Please find [more details about the training stage in the Training directory](https://github.com/yzjiao/On-Demand-IE/tree/main/training).
+Please find more details about the training stage in [the Training directory](https://github.com/yzjiao/On-Demand-IE/tree/main/training).
 
 
 ## :bar_chart: Model Evaluation
